@@ -1,6 +1,5 @@
 #+title: Noelle G. Crawford
-Hi, I'm Noelle. I'm an ECE student @ UIUC interested in computer architecture and chip design. Update...
-Is this working yet?? Nope :(
+ECE Student [[ece.illinois.edu][@UIUC]] interested in computer architecture and chip design.
 
 * Code Examples
 #+BEGIN_SRC C++ :results output :exports both
