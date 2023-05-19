@@ -1,4 +1,0 @@
-#+title: Archive
-1. IDK TODO...
-2. Paper Review: ECPT
-3. [[./blogs/he_bfv.org][Homomorphic Encryption (and its acceleration)]]
