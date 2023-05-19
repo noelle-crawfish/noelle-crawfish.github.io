@@ -1,5 +1,5 @@
 #+title: Noelle G. Crawford
-ECE Student [[ece.illinois.edu][@UIUC]] interested in computer architecture and chip design.
+ECE Student [[http:ece.illinois.edu][@UIUC]] interested in computer architecture and chip design.
 
 * Code Examples
 #+BEGIN_SRC C++ :results output :exports both
