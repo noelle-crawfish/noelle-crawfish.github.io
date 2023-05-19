@@ -1,0 +1,3 @@
+#+title: Homomorphic Encryption (and its Acceleration)
+
+This past semester, I had the opportunity to work on a project desiging a hardware accelerator for homomorphic encryption.

@@ -1,0 +1,11 @@
+#+title: PUMICE
+#+subtitle: Eroding GPU Fingerprints with WebGL Buffer Randomization
+
+* Intro
+* Browser Fingerprinting
+* DrawnApart
+* The Chrome GPU Stack
+* WebGL
+* PUMICE
+
+Read the full paper [[../resources/pumice.pdf][here]].
