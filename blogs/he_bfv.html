@@ -237,6 +237,28 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content">
@@ -244,6 +266,76 @@ for the JavaScript code in this tag.
 <p>
 This past semester, I had the opportunity to work on a project desiging a hardware accelerator for homomorphic encryption.
 </p>
+
+<p>
+Homomorphic encryption is <i>hard</i>. Both computationally (to break) and subjectively (to implement).
+</p>
+
+<div id="outline-container-org49bea29" class="outline-2">
+<h2 id="org49bea29"><span class="section-number-2">1</span> Background</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org76cac5b" class="outline-3">
+<h3 id="org76cac5b"><span class="section-number-3">1.1</span> What is Homomorphic Encryption?</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+The name homomorphic comes from the mathematical concept of homomorphisms. A <b>homomorphism</b> is a function \(\phi:A\rightarrow B\) such that \(\forall x, y \in A\), \(\phi(x) \cdot \phi(y) = \phi(x \cdot y)\).
+</p>
+
+<p>
+A <b>homomorphic encryption scheme</b> is one in which the encrypting function acts as a homomorphism. The scheme should allow us to compute on encrypted numbers and have the decrypted result be correct. That is, for an encryption scheme with encryption and decryption functions \((E, D)\), we should have \(D(E(a) \cdot E(b)) = a \cdot b\).
+</p>
+</div>
+<div id="outline-container-org1151cac" class="outline-4">
+<h4 id="org1151cac"><span class="section-number-4">1.1.1</span> Why is this hard?</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<ol class="org-ol">
+<li>Mathmatically complex</li>
+<li>Computationally intensive</li>
+<li>Reliant on custom data types</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org334d94e" class="outline-3">
+<h3 id="org334d94e"><span class="section-number-3">1.2</span> HE Schemes</h3>
+<div class="outline-text-3" id="text-1-2">
+</div>
+<div id="outline-container-orge2a29a3" class="outline-4">
+<h4 id="orge2a29a3"><span class="section-number-4">1.2.1</span> BFV</h4>
+</div>
+<div id="outline-container-org06cd59d" class="outline-4">
+<h4 id="org06cd59d"><span class="section-number-4">1.2.2</span> CKKS</h4>
+</div>
+</div>
+</div>
+<div id="outline-container-org25426af" class="outline-2">
+<h2 id="org25426af"><span class="section-number-2">2</span> Acceleration</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org991904f" class="outline-3">
+<h3 id="org991904f"><span class="section-number-3">2.1</span> Our Attempt</h3>
+</div>
+<div id="outline-container-org25b9682" class="outline-3">
+<h3 id="org25b9682"><span class="section-number-3">2.2</span> Current Research</h3>
+</div>
+</div>
+<div id="outline-container-org478c412" class="outline-2">
+<h2 id="org478c412"><span class="section-number-2">3</span> The Future of HE</h2>
+</div>
+
+<div id="outline-container-orgb330415" class="outline-2">
+<h2 id="orgb330415"><span class="section-number-2">4</span> Code Examples</h2>
+<div class="outline-text-2" id="text-4">
+<div class="org-src-container">
+<pre class="src src-C++"><span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">i</span> = 0;
+<span style="font-weight: bold;">if</span>(1) {
+    <span style="font-weight: bold; text-decoration: underline;">std</span>::cout &lt;&lt; <span style="font-style: italic;">"hi"</span>;
+}
+</pre>
+</div>
+</div>
+</div>
 </div>
 </body>
 </html>
