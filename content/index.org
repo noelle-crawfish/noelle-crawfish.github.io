@@ -20,7 +20,7 @@ print("Goodbye World")
 x = \sqrt{b}
 \end{equation}
 
-if $a = b$ then $\exists a \in X$
+if $a = b$ then $\exists a \in X$ (so true!!!)
 
 * Recent Posts
 - C++ Dequeues
