@@ -37,9 +37,9 @@
 
 ;; Customize the HTML output
 (setq org-html-validation-link nil            ;; Don't show validation link
-      org-html-head-include-scripts t)       ;; Use our own scripts
-      ; org-html-head-include-default-style nil ;; Use our own styles
-      ;org-html-head "<link rel=\"stylesheet\" href=\"https://cdn.simplecss.org/simple.min.css\" />")
+      org-html-head-include-scripts t         ;; Use our own scripts
+      org-html-head-include-default-style t) ;; Use our own styles
+      ;; org-html-head "<link rel=\"stylesheet\" href=\"../css/org_theme.css\" />")
 
 ;; Define the publishing project
 (setq org-publish-project-alist
@@ -53,7 +53,8 @@
              :with-creator nil
              :with-toc nil
              :section-numbers t
-             :time-stamp-file nil)))
+             :time-stamp-file nil
+             :with-fixed-width t)))
 
 ;; Generate the site output
 (org-publish-all t)
