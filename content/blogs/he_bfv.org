@@ -1,3 +1,30 @@
 #+title: Homomorphic Encryption (and its Acceleration)
 
 This past semester, I had the opportunity to work on a project desiging a hardware accelerator for homomorphic encryption.
+
+Homomorphic encryption is /hard/. Both computationally (to break) and subjectively (to implement).
+
+* Background
+** What is Homomorphic Encryption?
+The name homomorphic comes from the mathematical concept of homomorphisms. A *homomorphism* is a function $\phi:A\rightarrow B$ such that $\forall x, y \in A$, $\phi(x) \cdot \phi(y) = \phi(x \cdot y)$.
+
+A *homomorphic encryption scheme* is one in which the encrypting function acts as a homomorphism. The scheme should allow us to compute on encrypted numbers and have the decrypted result be correct. That is, for an encryption scheme with encryption and decryption functions $(E, D)$, we should have $D(E(a) \cdot E(b)) = a \cdot b$.
+*** Why is this hard?
+1. Mathmatically complex
+2. Computationally intensive
+3. Reliant on custom data types
+** HE Schemes
+*** BFV
+*** CKKS
+* Acceleration
+** Our Attempt
+** Current Research
+* The Future of HE
+
+* Code Examples
+#+BEGIN_SRC C++ :results output :exports both
+int i = 0;
+if(1) {
+    std::cout << "hi";
+}
+#+END_SRC

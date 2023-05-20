@@ -1,5 +1,6 @@
 #+title: Noelle G. Crawford
 ECE Student [[http:ece.illinois.edu][@UIUC]] interested in computer architecture and chip design.
+If you need to reach me, try my [[mailto:noellec3@illinois.edu][email]].
 
 * Code Examples
 #+BEGIN_SRC C++ :results output :exports both
@@ -22,6 +23,7 @@ x = \sqrt{b}
 if $a = b$ then $\exists a \in X$
 
 * Recent Posts
+- C++ Dequeues
 - [[./blogs/pumice.org][PUMICE]]
 - [[./blogs/he_bfv.org][Homomorphic Encryption]]
 - Paper Review: ECPT
