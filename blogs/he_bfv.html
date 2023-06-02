@@ -88,12 +88,12 @@ This past semester, I had the opportunity to work on a project desiging a hardwa
 Homomorphic encryption is <i>hard</i>. Both computationally (to break) and subjectively (to implement).
 </p>
 
-<div id="outline-container-org82cdaf0" class="outline-2">
-<h2 id="org82cdaf0"><span class="section-number-2">1</span> Background</h2>
+<div id="outline-container-org90c19c4" class="outline-2">
+<h2 id="org90c19c4"><span class="section-number-2">1</span> Background</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org5a6113b" class="outline-3">
-<h3 id="org5a6113b"><span class="section-number-3">1.1</span> What is Homomorphic Encryption?</h3>
+<div id="outline-container-orge1f6741" class="outline-3">
+<h3 id="orge1f6741"><span class="section-number-3">1.1</span> What is Homomorphic Encryption?</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 The name homomorphic comes from the mathematical concept of homomorphisms. A <b>homomorphism</b> is a function \(\phi:A\rightarrow B\) such that \(\forall x, y \in A\), \(\phi(x) \cdot \phi(y) = \phi(x \cdot y)\).
@@ -103,8 +103,8 @@ The name homomorphic comes from the mathematical concept of homomorphisms. A <b>
 A <b>homomorphic encryption scheme</b> is one in which the encrypting function acts as a homomorphism. The scheme should allow us to compute on encrypted numbers and have the decrypted result be correct. That is, for an encryption scheme with encryption and decryption functions \((E, D)\), we should have \(D(E(a) \cdot E(b)) = a \cdot b\).
 </p>
 </div>
-<div id="outline-container-orge4fed5f" class="outline-4">
-<h4 id="orge4fed5f"><span class="section-number-4">1.1.1</span> Why is this hard?</h4>
+<div id="outline-container-org9949e13" class="outline-4">
+<h4 id="org9949e13"><span class="section-number-4">1.1.1</span> Why is this hard?</h4>
 <div class="outline-text-4" id="text-1-1-1">
 <ol class="org-ol">
 <li>Mathmatically complex</li>
@@ -114,35 +114,35 @@ A <b>homomorphic encryption scheme</b> is one in which the encrypting function a
 </div>
 </div>
 </div>
-<div id="outline-container-orgfba49a7" class="outline-3">
-<h3 id="orgfba49a7"><span class="section-number-3">1.2</span> HE Schemes</h3>
+<div id="outline-container-org154bab0" class="outline-3">
+<h3 id="org154bab0"><span class="section-number-3">1.2</span> HE Schemes</h3>
 <div class="outline-text-3" id="text-1-2">
 </div>
-<div id="outline-container-orga35e4c4" class="outline-4">
-<h4 id="orga35e4c4"><span class="section-number-4">1.2.1</span> BFV</h4>
+<div id="outline-container-org85ea2a1" class="outline-4">
+<h4 id="org85ea2a1"><span class="section-number-4">1.2.1</span> BFV</h4>
 </div>
-<div id="outline-container-org462b836" class="outline-4">
-<h4 id="org462b836"><span class="section-number-4">1.2.2</span> CKKS</h4>
+<div id="outline-container-org5fd47d3" class="outline-4">
+<h4 id="org5fd47d3"><span class="section-number-4">1.2.2</span> CKKS</h4>
 </div>
 </div>
 </div>
-<div id="outline-container-org7ab4bae" class="outline-2">
-<h2 id="org7ab4bae"><span class="section-number-2">2</span> Acceleration</h2>
+<div id="outline-container-org855caf4" class="outline-2">
+<h2 id="org855caf4"><span class="section-number-2">2</span> Acceleration</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org8b0b54e" class="outline-3">
-<h3 id="org8b0b54e"><span class="section-number-3">2.1</span> Our Attempt</h3>
+<div id="outline-container-org926976c" class="outline-3">
+<h3 id="org926976c"><span class="section-number-3">2.1</span> Our Attempt</h3>
 </div>
-<div id="outline-container-org4fc1ca0" class="outline-3">
-<h3 id="org4fc1ca0"><span class="section-number-3">2.2</span> Current Research</h3>
+<div id="outline-container-orgaa68c55" class="outline-3">
+<h3 id="orgaa68c55"><span class="section-number-3">2.2</span> Current Research</h3>
 </div>
 </div>
-<div id="outline-container-orgbed20cc" class="outline-2">
-<h2 id="orgbed20cc"><span class="section-number-2">3</span> The Future of HE</h2>
+<div id="outline-container-org49144d4" class="outline-2">
+<h2 id="org49144d4"><span class="section-number-2">3</span> The Future of HE</h2>
 </div>
 
-<div id="outline-container-org4b52e1e" class="outline-2">
-<h2 id="org4b52e1e"><span class="section-number-2">4</span> Code Examples</h2>
+<div id="outline-container-orgbbe80ae" class="outline-2">
+<h2 id="orgbbe80ae"><span class="section-number-2">4</span> Code Examples</h2>
 <div class="outline-text-2" id="text-4">
 <div class="org-src-container">
 <pre class="src src-C++"><span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">i</span> = 0;
