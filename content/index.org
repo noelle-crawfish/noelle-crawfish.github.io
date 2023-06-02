@@ -23,11 +23,7 @@ x = \sqrt{b}
 if $a = b$ then $\exists a \in X$ (so true!!!)
 
 * Recent Posts
-- C++ Dequeues
 - [[./blogs/pumice.org][PUMICE]]
 - [[./blogs/he_bfv.org][Homomorphic Encryption]]
-- Paper Review: ECPT
 
 * [[./archive.org][Archive]]
-
-PLSLKJDFLKJ
