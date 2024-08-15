@@ -39,7 +39,7 @@
        (list "my-org-site"
              :recursive t
              :base-directory "./src"
-             :publishing-directory "./public"
+             :publishing-directory "./docs"
              :publishing-function 'org-html-publish-to-html
              :with-toc nil
              :section-numbers nil
