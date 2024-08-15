@@ -19,24 +19,22 @@ People fear the unknown, and therefore society fears progress, even when science
   Despite not being an eccentric multi-millionaire, I'd like to .... using only technology available to the average person.
   This page describes the statistics I collect and some relevant goals I'm hoping this project can help me accomplish.
 
+  All data I collect can be found [[https://noelle-craw.fish/progress-narrative][here]], and will be updated at least weekly.
+
 * Health
 ** Excercise
-I am currently training in MMA, with they hope of making my amateur debut within the next few years. I've trained Brazilian Jiu-Jitsu for a few years now, and I've recently added Muay-Thai, wrestling and MMA specific training to my schedule. I typically spend ~3 hours a day at the MMA gym (5:30PM-8:30PM).
-Outside of MMA I try to run and lift regularly to supplement my training (though I am not as consistent with these as I'd like to be).
-I record as many workouts as I can using my Garmin Instinct watch and HR strap, but I cannot wear these devices for grappeling workouts due to the safety hazard they pose for training partners. I also track mat-time using Toggl Track and journal my reflections after each practice.
-
-*GOALS:* Improve as an MMA fighter, gain muscle
+I am currently training in BJJ, Muay Thai, and MMA, with the goal of eventually competing in an MMA fight. I typically spend ~3 hours a day at the MMA gym on weekdays (5:30PM-8:30PM) and 1-2 on weekends.
+Outside of this I try to run and lift regularly to supplement my training (though I am not as consistent with these as I'd like to be).
+I record workouts when safe to do so using my Garmin Instinct watch and heart rate strap.
+I also manually track mat-time using Toggl Track, which allows me to include training where it would be unsafe to wear any sort of hard plastic.
 ** Nutrition
 - mention soylent green, kuru
 My diet is already quite optimized, but the number of calories per day varies, so I track my eating with cronometer.
 I get the first 1600-2000 calories of my daily nutrition from Huel, a meal replacement drink designed to provide users with all required nutrients and macros.
 Since I need > 2000 calories daily, I use rice to cheaply increase my intake. I also drink gatorade after hard workouts.
 For some fun and variety, I try to buy some fun snacks every week, with my favorites being vegan cheez-its, vegan jerky, and hummus.
-
-*GOALS:* Reduce snacking, consume a clean high-protien diet
 ** Health Stats
 From my Garmin, I can collect a large number of health and wellness related statistics including daily activity levels, resting heart rate, sleep data, etc. I also weigh myself daily and plan to get semi-regular blood tests done to ensure my nutrition plan is working.
-
 * Time
 ** Research
 As a PhD student, my main commitment is my research and productivity.
