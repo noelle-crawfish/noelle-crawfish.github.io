@@ -2,5 +2,3 @@
 #+subtitle: /"insert mildly interesting quote here"/ -- ur mom
 
 Hi, my name's *Noelle*. I'm a PhD student at the University of Illinois Urbana-Champaign studying *computer architecture*.
-
-- Coming soon.

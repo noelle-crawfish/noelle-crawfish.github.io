@@ -1,49 +1,53 @@
 #+title: Progress Narrative
 #+subtitle: /"God isn't compatible with machinery and scientific medicine and universal happiness. You must make your choice. Our civilization has chosen machinery and medicine and happiness.”/ -- Aldus Huxley, Brave New World
 
-I'm a huge fan of science fiction for many reasons:
-
+I'm a huge fan of science fiction for many reasons: the worldbuilding
 To me, science fiction has always been a vessel through which to fuel my fascination with progress by giving me ideas to project onto the real world.
 Yet in many novels, the progress of society is both a blessing and a curse, with authors warning of the challenges a technologically advanced future will bring.
 
 In high school I read Aldus Huxley's /Brave New World/, the story of a futuristic world reduced to a hedonistic society optimized for pleasure without meaning.
 The story uses sex for shock value, warning of the perversions that might overtake our world if we are to allow unchecked "progress".
-People fear the unknown, and therefore society fears progress, even when science has unlimited potential to improve our quality of life.
-- overexadgerates ppls like of sex -> how would we ever get there, progress will always be in the direction fo the people
+Obviously, the society depicted is an extreme we're likely to never arrive at, but people fear the unknown, and therefore society fears progress, even when science has unlimited potential to improve our quality of life.
+I find /Brave New World/ still crosses my mind frequently, not because I found the author's message to be particularly convincing, but because of how /unconvincing/ I found the premise.
+I want to live in a world in which we continuosly pursue progress without being restrained by our trepidations.
 
-  Brian Johnson...
-  While I'm not personally interested in avoiding death (better dead than bored), I'm fascinated by the idea of monitoring one's life using technology.
-  Therefore, I'm setting out to do so using only commercially available tools easily obtainable by the average person.
-  This page describes the statistics I collect and some relevant goals I'm hoping this project can help me accomplish.
+Bryan Johnson is a multi-millionaire dumping his fortune into developing a protocol to reduce the speed of his own aging by controlling his diet, excercise, and participating in experimental therapies.
+He is currently the most-measured human being, as he is able to afford regular medical-grade measurement procedures and has a team dedicated to analyzing the results.
+While I'm not personally interested in avoiding death (better dead than bored), I'm fascinated by the idea of monitoring one's life using technology.
+Therefore, I'm setting out to do so using only commercially available tools easily obtainable by the average person.
+This page describes the statistics I collect and some relevant goals I'm hoping this project can help me accomplish.
 
-  All data I collect can be found [[https://noelle-craw.fish/progress-narrative][here]], and will be updated at least weekly.
+All data I collect can be found [[https://noelle-craw.fish/progress-narrative][here]], and will be updated at least weekly.
 
 * Health
 ** Excercise
 I am currently training in BJJ, Muay Thai, and MMA, with the goal of eventually competing in an MMA fight. I typically spend ~3 hours training on weekdays (5:30PM-8:30PM) and 1-2 on weekends.
-Outside of this I try to run and lift regularly to supplement my training (though I am not as consistent with these as I'd like to be).
-I record workouts when safe to do so using my Garmin Instinct watch and heart rate strap.
-I also manually track mat-time using Toggl Track, which allows me to include training where it would be unsafe to wear any sort of hard plastic.
+Outside of this I /try/ to run and lift regularly to supplement my training.
+I record workouts using my Garmin Instinct watch and Garmin FIT heart rate strap.
+I also manually track time spent on excercise using Toggl Track.
 ** Nutrition
-- mention soylent green, kuru
-My diet is already quite optimized, but the number of calories per day varies, so I track my eating with cronometer.
+The movie /Soylent Green/ portrays a future society in which nutrition is provided by highly processed wafers ideal for human nutrition. However, all is not as it seems, and it is eventually revealed that
+the food is in fact made from dead human beings. Unfortunately, canabalism does not work quite as well in the real world[fn:kuru], but the general idea is still applicable: manufactured foods can make life easier and cheaper.
 I get the first 1600-2000 calories of my daily nutrition from Huel, a meal replacement drink designed to provide users with all required nutrients and macros.
 Since I need > 2000 calories daily, I use peanut butter to cheaply increase my intake. I also drink gatorade after hard workouts.
-For some fun and variety, I try to buy some fun snacks every week, with my favorites being vegan cheez-its and hummus.
+I track all of my eating with cronometer.
 ** Health Stats
 From my Garmin, I can collect a large number of health and wellness related statistics including daily activity levels, resting heart rate, sleep data, etc. I also weigh myself daily and plan to get semi-regular blood tests done to ensure my nutrition plan is working.
 * Time
 ** Research
 As a PhD student, my main commitment is my research and productivity.
-I spend ~11 hours per weekday in the office and work weekends as-needed based on deadlines and work left unfinished during the week. I track all hours worked using Toggl Track and split the tracking into blocks representing fine-grained tasks.
+I spend ~11 hours per weekday in the office/in classes and work weekends as-needed based on deadlines and work left unfinished during the week. I track all hours worked using Toggl Track and split the tracking into blocks representing fine-grained tasks[fn:research-anon].
 By the end of this year, I am hoping to submit my first first-author paper to a major conference. I'm also aiming for at least one more co-authored paper submission.
 ** Leisure
 My (somewhat limited) remaining time is spent on hobbies and hanging out with friends. I'm looking to reduce the amount of leisure time I spend on social media or other 'mindless' things, and increase time spent learning/practicing interesting things. I track my leisure time using Toggl Track, and my screentime using StayFree (though this is subject to change if I can find a screentime monitor with a good API).
 ** Social
-For a long time, social interactions were something I struggled with a lot: talking to new people was hard, and determining who to consider a friend was even harder. Thankfully I was been able to improve my social skills dramatically over the course of my undergraduate career, but I still find there are certain things I struggle with. One major pain point recently has been that I will consistently put myself in social situations I know will make me /less/ happy due to a fear of "going-backwards" or upsetting my peers.
-Therefore, I've started tracking who I interact with daily, and the type of interaction we have (e.g. casual hang-out, party, scheduled activity). I can examine this data alongside my happiness tracking to give myself an optimized strategy for deciding when I should engage in social activities.
+I track who I interact with daily as well as the types of interactions we have (e.g. casual hang-outs, parties, scheduled activities). I aim to use this data to sepearate people who I legitimately enjoy being friends with from people who've been pushed into my social circle by circumstances such as shared classes or mutual activities.
 * Money
 I live in a low cost of living area making a salary of $2884/month ($34608/year) with very good job security. I track my spending meticulously using YNAB.
 My current financial goals involve contributing to stock portfolio and savings account while putting aside some money for annual vacations.
 * Happiness
-Since I believe my overall purpose in life is simply to be happy, I use the Daylio app to track my mood and use the data to understand how my decisions are impactful to this end.
+Since my overall goal in life is simply to be happy, I use the Daylio app to track my mood and use the data to understand how my decisions are impactful to this end.
+
+* Footnotes
+[fn:kuru] https://en.wikipedia.org/wiki/Kuru_(disease)
+[fn:research-anon] To preserve the confidentiality of my work before publication, the names of all research related tasks are obscured on my public calendar.

@@ -4,6 +4,7 @@
 |---------------------------+-------------+-----------|
 | Chip War                  | Non-Fiction | 10/10     |
 | The Soul of a New Machine | Non-Fiction | 10/10     |
+| [[file:reviews/embedded.org][Embedded]]                  | Sci-Fi      | X/10      |
 | Streetcar Seshjack        | Sci-Fi      | 10/10     |
 | The Mountain in the Sea   | Sci-Fi      | 10/10     |
 | The Three Body Problem    | Sci-Fi      | 10/10     |
