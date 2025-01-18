@@ -1,12 +1,31 @@
-#+title: Reading List
+#+title: Media Consumption 
 
-| Title                     | Genre       | My Rating |
-|---------------------------+-------------+-----------|
-| Chip War                  | Non-Fiction | 10/10     |
-| The Soul of a New Machine | Non-Fiction | 10/10     |
-| [[file:reviews/embedded.org][Embedded]]                  | Sci-Fi      | X/10      |
-| Streetcar Seshjack        | Sci-Fi      | 10/10     |
-| The Mountain in the Sea   | Sci-Fi      | 10/10     |
-| The Three Body Problem    | Sci-Fi      | 10/10     |
+| Title                      | Genre       | My Rating |
+|----------------------------+-------------+-----------|
+| *Books*                    |             |           |
+|----------------------------+-------------+-----------|
+| Chip War                   | Non-Fiction | 10/10     |
+| The Soul of a New Machine  | Non-Fiction | 10/10     |
+| [[file:reviews/embedded.org][Embedded]]                   | Sci-Fi      | X/10      |
+| Streetcar Seshjack         | Sci-Fi      | 10/10     |
+| The Mountain in the Sea    | Sci-Fi      | 10/10     |
+| The Three Body Problem     | Sci-Fi      | 10/10     |
+| Red Mars                   | Sci-Fi      | X/10      |
+| Some Desperate Glory       | Sci-Fi      | X/10      |
+| The Saint of Bright Doors  | Fantasy     | X/10      |
+|----------------------------+-------------+-----------|
+| *Movies*                   |             |           |
+|----------------------------+-------------+-----------|
+| The People vs. Larry Flynt | Drama       | X/10      |
+| Whiplash                   | Drama       | X/10      |
+|----------------------------+-------------+-----------|
+| *Television*               |             |           |
+|----------------------------+-------------+-----------|
+| Peacemaker                 | Superhero   | X/10      |
+| Invincible                 | Superhero   | X/10      |
+| Altered Carbon             | Sci-Fi      | X/10      |
+| Arcane                     | Drama       | 4/10      |
+
+
 
 # TODO maybe a marker to indicate series, in progress, etc
