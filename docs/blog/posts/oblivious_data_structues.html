@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-06-08 Sun 20:53 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A C++ Library for Oblivious Data Structures</title>
+<meta name="author" content="Noelle Crawford" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">A C++ Library for Oblivious Data Structures</h1>
+<div id="outline-container-org3983397" class="outline-2">
+<h2 id="org3983397">Motivation</h2>
+<div class="outline-text-2" id="text-org3983397">
+<p>
+Increase in cloud computing, but we don't trust the cloud. 
+</p>
+
+<p>
+Obviously, there is no motivation for cloud providers to offer consumers protection from themselves &#x2013; even if they are uninterested in client data, the additional protections would result in huge slowdowns and cost increases to their services, making them less attractive to consumers.
+</p>
+
+<p>
+Luckily, academics have shown that they are interested in working on technologies to secure the public cloud; secure computing on untrusted hardware is a thriving branch of security research.
+Emerging technologies such as TEEs (trusted execution environments), FHE (fully homomorphic encryption), and MPC (multi-party computation) enable users to write code which can be executed on an untrusted server to produce a result that is guaranteed to be secret and/or correct. 
+While these technologies come at a high cost (TEEs) or high computational overhead (FHE, MPC), they have shown promise for smaller scale computations, and in certain specialized computations (i.e., model training) after task-specific optimization.
+</p>
+
+<p>
+ORAM (oblivious random access memory) is a system level technique which aims to hide memory access patterns and data from an observer able to snoop on the memory device itself. 
+ORAM can be used as a standalone protection or in conjunction with other technologies that protect the computation occurring on the accessed data.
+Unfortunately, state of the art ORAM schemes introduce high overhead &#x2013; typically requiring a large number of standard memory reads and writes per oblvious memory operation, adding an overhead that for most developers is unacceptable. 
+</p>
+
+<p>
+This overhead can be removed in specific scenarios, but real-world implementations of such efficient, special-purpose ORAMs are not publicly or easily available. For this project, we aim to solve this with an implementation of multiple "oblivious data structures".
+</p>
+</div>
+</div>
+<div id="outline-container-org60654ee" class="outline-2">
+<h2 id="org60654ee">Background</h2>
+<div class="outline-text-2" id="text-org60654ee">
+</div>
+<div id="outline-container-org8b6fb40" class="outline-3">
+<h3 id="org8b6fb40">Secure Program Execution</h3>
+<div class="outline-text-3" id="text-org8b6fb40">
+<p>
+When considering how to define secure program execution, there are many facets to consider: compute, memory, network devices, etc. all have the ability to leak different, potentially sensitive information. Since it is difficult to consider all facets of secure execution at once, researchers segment security definitions to deal with the specific ways in which data could be leaked as individual security guarantees.
+</p>
+
+<p>
+In order for the execution of a program to be \textit{memory-trace oblivious}, an adversary observing the memory accesses must not be able to discern any information about sensitive program inputs or outputs (which may or may not include the program). 
+This is important, as through memory access patterns, an adversary may be able to use techniques such as frequency analysis, co-occurrence analysis, or read-write distinguishability to reveal information about program inputs based on dependent control flow.
+</p>
+</div>
+</div>
+<div id="outline-container-org8aab3d1" class="outline-3">
+<h3 id="org8aab3d1">ORAM</h3>
+<div class="outline-text-3" id="text-org8aab3d1">
+<p>
+ORAM is a system and/or compiler level technique to translate programs into a memory-trace oblivious form. 
+Almost all ORAM designs share the same core ideas for hiding data. When blocks are accessed, they are shuffled an remapped, so repeated accesses to the same data point will appear to be targeting a sequence of different, random memory locations. Data is also "over-fetched", meaning not all retrieved blocks contain useful data. This prevents an adversary from identifying which of several blocks is of use to the client. 
+</p>
+
+<p>
+ORAM is an active field of research, with many variants published, each optimized for slightly different use cases and implemented in slightly different ways. Some popular variants include path ORAM, circuit ORAM, and ring ORAM.
+</p>
+
+<p>
+Our project uses a non-recursive path ORAM\cite{stefanov2018path} as the basis of our implementation.
+Figure \ref{fig:path-oram} shows an example of a path ORAM data structure with 4 levels (\(L = 4\)). The structure has \(2^L\) unique "paths" from root to leaf, with each path being identifiable by the index of the leaf node at which it terminates. 
+Blocks of memory are placed into buckets located at nodes along the path their address is currently mapped to, with mappings stored either in a single lookup table, or a smaller, recursive set of path ORAMs (the size of the mapping table can be significant as the number of blocks becomes large). 
+Non-leaf nodes may contain blocks from any path which intersects them.
+</p>
+
+<p>
+When a block is read or written, \textit{all} blocks on the associated path are read from the path ORAM tree into the stash (a client side cache for ORAM blocks). The block data is then unencrypted, and the stored address tag is compared with the target address. The found block is then read/written as normal, and the address is remapped to a new, random leaf node. Once the operation is completed, blocks from the stash are written back if there is available bucket space on the path, starting from the leaf node and ending with the root bucket. The specific mapping and ordering of blocks will occasionally result in the stash not being fully empty after this step, and any remaining blocks will persist until the next write-back able to clear them.
+</p>
+
+<p>
+Despite being well studied, all existing ORAMs share a few key problems.
+The first is the large mapping store. One motivation for the use of ORAM is a large amount of data that cannot fit on a small, trusted client's storage, so if follows that we do not have a large amount of storage to waste on a mapping table.
+The current technique for resolving the client-side storage overhead is a recursive path ORAM, which stores a small mapping table on the client used to lookup increasingly more granular mapping tables from the ORAM server. This recursive process introduces extra overhead in terms of communication bandwidth and computation.
+Unfortunately, current research has been unable to alleviate this problem in the general case. However, most programs do not require massive amounts of random access memory. This is because large data is typically organized by data structures designed for efficient access. Prior works\cite{wang2014oblivious} have shown that in this special case, the mapping lookup overhead can be almost \textit{entirely} eliminated on the client side.
+</p>
+</div>
+</div>
+<div id="outline-container-orgcff921c" class="outline-3">
+<h3 id="orgcff921c">Oblivious Data Structures</h3>
+<div class="outline-text-3" id="text-orgcff921c">
+<p>
+A small number of prior works specifically target oblivious data structures, which are data structures built on top of secure technologies such as MPC or ORAM.
+Our work is based on the pointer-based ORAM oblivious data structures described by \cite{wang2014oblivious} due to the simplicity and extensibility of its design.
+The core idea of the work is that data structures restrict what memory locations can be accessed at any point to a small number of addresses, and therefore only a small number of mappings must be known at any point. The author's suggest adding metadata to each oram block indicating the revealed accessible addresses and their leaf mappings. The ORAM client itself also stores a small number of pointers (i.e., for an oblivious stack, the top pointer and mapping).
+The paper also proposes a locality based strategy for implementing efficient oblivious graph algorithms, but we do not implement this in our project.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgee6606e" class="outline-2">
+<h2 id="orgee6606e">How it Works</h2>
+<div class="outline-text-2" id="text-orgee6606e">
+</div>
+<div id="outline-container-orgeff8b62" class="outline-3">
+<h3 id="orgeff8b62">Client Server Model</h3>
+<div class="outline-text-3" id="text-orgeff8b62">
+<p>
+Our design is based on a client server ORAM model, where communication occurs using serialized command structures over a TCP stream. The client initiates path reads or path write-backs, and then sends or receives a fixed number of encrypted ORAM blocks based on the path ORAM parameters. For example, a tree with \(L = 4\) levels and \(Z = 8\) blocks per node bucket would read/write \(4 \cdot 8 = 32\) blocks. The buckets are initialized to contain encrypted "empty" blocks, which are replaced during execution with real blocks as the data structure is populated.
+</p>
+</div>
+</div>
+<div id="outline-container-orgccf4bd0" class="outline-3">
+<h3 id="orgccf4bd0">Data Structures</h3>
+<div class="outline-text-3" id="text-orgccf4bd0">
+</div>
+<div id="outline-container-orgf4fa6c7" class="outline-4">
+<h4 id="orgf4fa6c7">Oblivious Stack</h4>
+<div class="outline-text-4" id="text-orgf4fa6c7">
+<p>
+Figure \ref{fig:stack} shows an oblivious stack data structure. Like in traditional path ORAM, each block has an associated address mapped to a certain leaf index. Unlike traditional path ORAM, the client ORAM only has access to a single one of these mappings: it stores the top pointer and the associated leaf index. 
+</p>
+
+<p>
+When pushing to the stack, the new top block is assigned an address based on an internal counter variable (i.e., the \(i^{th}\) block has address \(i\)). This counter can also be used to return the current size of the stack. The new block's address is randomly mapped to a leaf index. Alongside the block data, and address, the block also stores a pointer to the previous stack top (the address and leaf index) as metadata. These allow backtracking through blocks as they are removed from the stack.
+</p>
+
+<p>
+When popping from the stack, the client side metadata is used to lookup the top block from server as in standard non-recursive path ORAM. Then, the client metadata is replaced with the fetched blocks metadata, which is a pointer to the block just below it on the stack. This new top block can then be popped in an identical fashion.
+</p>
+</div>
+</div>
+<div id="outline-container-org9967405" class="outline-4">
+<h4 id="org9967405">Oblivious Queue</h4>
+<div class="outline-text-4" id="text-org9967405">
+<p>
+Figure \ref{fig:queue} shows an oblivious queue data structure. The queue client stores two ORAM pointers: one to the queue head and the other to the queue tail. These can be used to push and pop values to/from the queue similarly to the stack client. However, the queue requires a small modification to the push methodology.
+</p>
+
+<p>
+When removing blocks from the queue, we would then like to point the head to the ORAM block that was pushed \textit{after} the block that was just removed. This means we need to include metadata in the block when we write it pointing to another block which \textit{does not yet exits}. We solve this problem by pre-generating an address and leaf index for the next block, which we store on the client side. Then, when the following push request is received from the user, the client is able to create a new block at the existing ORAM pointer, which will then be retrievable after popping the previous block. This "ghost block" technique is shown in figure \ref{fig:queue}.
+</p>
+</div>
+</div>
+<div id="outline-container-orge73d8c1" class="outline-4">
+<h4 id="orge73d8c1">Oblivious AVL Tree (Map/Set)</h4>
+<div class="outline-text-4" id="text-orge73d8c1">
+<p>
+Figure \ref{fig:avl} shows an oblivious AVL tree, which is the basis of our oblivious map and oblivious set data structures. This follows from the C++ implementation of \code{std::map} and \code{std::set} which use the AVL tree for guaranteed fast look-ups.
+</p>
+
+<p>
+We store the root node's address and leaf index in the AVL tree-based clients. Each ORAM block is a node in the tree, and contains as metadata pointers to its child blocks. When looking up an item in the map or set, we always start at the root and search downwards, at each step using the appropriate (left vs. right) child pointer found in the current block based on the comparison function provided.
+</p>
+
+<p>
+When inserting an item, we traverse the tree similarly and then perform any re-balancing operations as we would in a traditional AVL tree. 
+We introduce some optimizations during our implementation phase which help reduce the number of client-server interactions necessary for these operations, which require multiple block accesses with high temporal locality.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org8d1aa70" class="outline-2">
+<h2 id="org8d1aa70">Implementation</h2>
+<div class="outline-text-2" id="text-org8d1aa70">
+<p>
+We implement our library in \(\approx1500\) lines of C++.
+</p>
+
+<p>
+The implementation contains two base classes: \code{ORAMClient} and \code{ORAMServer}. These classes communicate via a bidirectional TCP stream.
+Communication uses a serialized \code{Cmd} structure containing an opcode, an (optional) encrypted ORAM block, and an (optional) leaf index. 
+The \code{Cmd} has one of three opcodes: 
+</p>
+\begin{itemize}
+    \item \code{GET\_BLOCKS}: Used by the client to initiate a read of blocks from a certain path of the ORAM. When sending this opcode the \code{Cmd} must include a valid \code{leaf\_idx}.
+    \item \code{DUMP\_STASH}: Used by the client to initiate a writeback of blocks to a certain path of the ORAM. When sending this opcode the \code{Cmd} must include a valid \code{leaf\_idx}.
+    \item \code{BLOCKS}: Used once another command has been initiated to send a single ORAM block between the client and server.
+\end{itemize}
+<p>
+Within our client code, a \code{GET\_BLOCKS} sequence is always followed by a \code{DUMP\_STASH} operation which allows us to keep the number of blocks on a path constant despite the fixed number of blocks transmitted during each operation. Encrypted empty blocks are used to pad the path buckets when no "real" blocks with a suitable leaf index exist in the stash.
+</p>
+
+<p>
+Future work could reduce communication overhead by having different \code{Cmd} structures based on which fields are required by the opcode to reduce the amount of null data transferred. 
+</p>
+
+<p>
+Each of the oblivious data structures described in this paper are implemented as classes which extend \code{ORAMClient}. They expose public functions comparable to the C++ implementations of the same data structures. All TCP communication and intermediate read/write optimizations occur in the background, hidden from a user.
+</p>
+
+<p>
+The encryption and decryption of block data uses an AES implementation from the OpenSSL\cite{openssl} cryptography library. We operate on the entire ORAM block structure (including metadata), and send the fully encrypted blob to the server.
+</p>
+</div>
+<div id="outline-container-orga0d13ee" class="outline-3">
+<h3 id="orga0d13ee">Optimizations</h3>
+<div class="outline-text-3" id="text-orga0d13ee">
+<p>
+We introduce two optimizations during our implementation phase. 
+The first is delayed writes. For stack/queue push operations, and AVL tree insertion, we know that the block at the address we'd like to write to does not yet exist on the server. Therefore, there is no need for us to communicate with the server. Instead, we create a new block locally and place it into the stash. It will then eventually be propagated to the server when an operation necessitating a write-back does occur.
+To ensure this technique does not result in an overfilled stash, we introduce a threshold value. Once there are \code{THRESHOLD} number of blocks in the stash, the client triggers a \code{GET\_BLOCKS/DUMP\_STASH} command pairing to a randomly chosen leaf index, effectively draining the stash to prevent overflow.
+</p>
+
+<p>
+The second optimization is the introduction of an \code{in\_use} flag for blocks in the stash. When an ORAM block is retrieved for the first time from the server or accessed from the stash the flag is set to indicate that it should not be evicted from the stash during a write-back. The function using the block is then responsible for un-setting the flag once the block is no longer needed. The usage of this flag is entirely transparent to the user, and does not introduce any programming overhead.
+</p>
+</div>
+</div>
+<div id="outline-container-org2011095" class="outline-3">
+<h3 id="org2011095">Security Analysis</h3>
+<div class="outline-text-3" id="text-org2011095">
+<p>
+Our implementation is based on prior works\cite{wang2014oblivious, stefanov2018path} which provide an in-depth security analysis of the pointer based method. We briefly discuss the security of our practical implementation decisions here.
+</p>
+
+<p>
+Block data and metadata is encrypted using the AES symmetric cipher, which is considered to be secure. We include a nonce in the blocks that is incremented before encryption to prevent the server from knowing which blocks on a path were/were not read/written since their last tenancy on the server. We also initialize the \texttt{data} field empty blocks to random bytes to prevent them from being identifiable by the server when encrypted.
+</p>
+
+<p>
+The server also has minimal knowledge about the usage of the data structure. To begin, we do not explicitly inform the server which of the implemented data structures our client is. Any access to the server is done through the base \texttt{ORAMClient} class and provides only an opcode, an encrypted block, and a leaf index.
+The server cannot tell if an access is a read or write since all blocks will appear changed when written back due to the nonce.
+</p>
+
+<p>
+The delayed write mechanism in conjunction with random stash flushes helps hide operations that could potentially reveal the identity of the data structure or the usage (reads vs. writes). 
+Consider the case in which a client continuously pushes to a stack, and then continuously pops from the stack. In this case, the leaf indices seen by the server would appear symmetric, allowing the server to guess the access pattern.
+By caching writes on the client and then randomly choosing a path to fill to, we make access patterns appear more random and prevent such information leakage.
+</p>
+
+<p>
+There is some information leakage in terms of read/write timing and the overall number of accesses, but this has not been solved by previous ORAM works, and therefore we do not attempt to address it.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcddc800" class="outline-2">
+<h2 id="orgcddc800">Limitations</h2>
+<div class="outline-text-2" id="text-orgcddc800">
+<p>
+Due to the short time-frame, our library has many limitations. First, the exposed APIs eliminate the possibility of random-access to data, essentially "locking" the information into the data structures. That is, data can only be accessed \textit{if} it is in a position referenceable under correct usage of the data structure. This prevents us from providing certain utility functions included in the C++ equivalent implementations, such as the ability to peek at data in the middle of a stack. To solve this, our ORAM client/server interface could be extended to provide recursive lookup functionality when necessary based on the Path ORAM\cite{stefanov2018path} design.
+</p>
+
+<p>
+Our implementation is also designed for data structures which store large amounts of data per-node of the data structure in use. This is because we treat each ORAM block on the path as a single data structure node (i.e., stack item, AVL tree node), meaning that if the data stored per entry is small the per-byte read/write costs cannot be amortized well. One possible solution to this is structure packing: a single ORAM block could contain multiple entries of a structure. This segmented design is more difficult to implement, but would likely be much more practical for most use cases, and would allow much more efficient amortized accesses.
+</p>
+
+<p>
+Finally, AES is quite slow, and likely not the best encryption algorithm to use for hiding block data. We use it in our implementation because it is widely available in standard cryptography libraries, but to make this implementation practical, it should likely be exchanged for a faster encryption mechanism. We could also likely eliminate the setup cost by using decryption failures to mark initially empty blocks instead of explicitly encrypted null-address blocks.
+</p>
+
+<p>
+Other than solving the limitations listed above, future work on this project could extend our library to include more data structures.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Noelle Crawford</p>
+<p class="date">Created: 2025-06-08 Sun 20:53</p>
+</div>
+</body>
+</html>

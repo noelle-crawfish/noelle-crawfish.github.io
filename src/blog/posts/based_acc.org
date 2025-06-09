@@ -1,0 +1,10 @@
+#+title: BasedAcc
+#+subtitle: BasedAcc is a FHE (fully homomorphic encryption) accelerator written in ~XX lines of SystemVerilog and verified using ~XX lines of C code.
+
+* Background
+
+* Design
+
+* Implementation
+
+* End
