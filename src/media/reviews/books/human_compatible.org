@@ -1,0 +1,8 @@
+#+title: Human Compatible: AI and the Problem of Control
+
+This goal of this book is to help readers understand what we the goals of AI researchers should be in order to develop AI which is compatible with humanity, as well as to understand what the world will look like once we reach AGI. The author argues that at this point, the progression of AI is inevitable, and therefore instead of aiming to shutdown harmful AI we must make sure that the AI we do develop is helpful from the start. I originally saw this book on my professor's desk (lol) so I went in with high hopes. 
+While I agreed with a lot of the author's points, I didn't enjoy the book as much as I wanted to, likely because I was already too familiar with the field.
+The author spends a lot of time going over what AI means, and what it looks like today. As someone who's working on AI infrastructure as a PhD student, I'm pretty familiar with the current SOTA, and so the constant explanations felt like interruptions, not additions. 
+
+I'd recommend this book to anyone interested in AI policy, or AI researchers interested in "safe" AI. While those in the field may find some parts slow, the philosophy presented makes it worth a read.
+

@@ -1,30 +1,48 @@
 #+title: Media Consumption 
 
-| Title                      | Genre       | My Rating |
-|----------------------------+-------------+-----------|
-| *Books*                    |             |           |
-|----------------------------+-------------+-----------|
-| Chip War                   | Non-Fiction | 10/10     |
-| The Soul of a New Machine  | Non-Fiction | 10/10     |
-| [[file:reviews/embedded.org][Embedded]]                   | Sci-Fi      | X/10      |
-| Streetcar Seshjack         | Sci-Fi      | 10/10     |
-| The Mountain in the Sea    | Sci-Fi      | 10/10     |
-| The Three Body Problem     | Sci-Fi      | 10/10     |
-| Red Mars                   | Sci-Fi      | X/10      |
-| Some Desperate Glory       | Sci-Fi      | X/10      |
-| The Saint of Bright Doors  | Fantasy     | X/10      |
-|----------------------------+-------------+-----------|
-| *Movies*                   |             |           |
-|----------------------------+-------------+-----------|
-| The People vs. Larry Flynt | Drama       | X/10      |
-| Whiplash                   | Drama       | X/10      |
-|----------------------------+-------------+-----------|
-| *Television*               |             |           |
-|----------------------------+-------------+-----------|
-| Peacemaker                 | Superhero   | X/10      |
-| Invincible                 | Superhero   | X/10      |
-| Altered Carbon             | Sci-Fi      | X/10      |
-| Arcane                     | Drama       | 4/10      |
+| Title                      | Genre         | My Rating |
+|----------------------------+---------------+-----------|
+| *Books (Non-Fiction)*      |               |           |
+|----------------------------+---------------+-----------|
+| Godel, Escher, Bach        | Philosophy    | X/10      |
+| [[file:reviews/books/human_compatible.org][Human Compatible]]           | AI/Philosophy | 6/10      |
+| [[file:reviews/books/chip_war.org][Chip War]]                   | Technology    | 10/10     |
+| The Soul of a New Machine  | Technology    | 10/10     |
+| Masters of Doom            | Technology    | 9/10      |
+| Human Compatible           | Technology    | X/10      |
+| As Gods Among Men          | History       | X/10      |
+| The Ascent of Money        | History       | X/10      |
+| Skin in the Game           | Philosophy    | X/10      |
+|----------------------------+---------------+-----------|
+| *Books (Fiction)*          |               |           |
+|----------------------------+---------------+-----------|
+| Beggars in Spain           | Sci-Fi        | 10/10     |
+| A Memory Called Empire     | Sci-Fi        | 9/10      |
+| The Emporer's Soul         | Fantasy       | 4/10      |
+| Streetcab Seshjack         | Sci-Fi        | X/10      |
+| [[file:reviews/books/the_mountain_in_the_sea.org][The Mountain in the Sea]]    | Sci-Fi        | 10/10     |
+| [[file:reviews/books/three_body_problem.org][The Three Body Problem]]     | Sci-Fi        | 10/10     |
+| [[file:reviews/books/red_mars.org][Red Mars]]                   | Sci-Fi        | X/10      |
+| Some Desperate Glory       | Sci-Fi        | X/10      |
+| The Saint of Bright Doors  | Fantasy       | X/10      |
+| [[file:reviews/books/service_model.org][Service Model]]              | Sci-Fi        | 10/10     |
+| The Book of the New Sun    | Fantasy       | X/10      |
+| Embedded                   | Sci-Fi        | X/10      |
+|----------------------------+---------------+-----------|
+| *Movies*                   |               |           |
+|----------------------------+---------------+-----------|
+| The People vs. Larry Flynt | Drama         | X/10      |
+| Whiplash                   | Drama         | X/10      |
+|----------------------------+---------------+-----------|
+| *Television*               |               |           |
+|----------------------------+---------------+-----------|
+| You                        | Drama         | X/10      |
+| Severance                  | Sci-Fi/Drama  | X/10      |
+| Peacemaker                 | Superhero     | X/10      |
+| Invincible                 | Superhero     | X/10      |
+| Altered Carbon             | Sci-Fi        | X/10      |
+| Arcane                     | Drama         | 4/10      |
+| American Vandal            | Mockumentary  | 10/10     |
 
 
 

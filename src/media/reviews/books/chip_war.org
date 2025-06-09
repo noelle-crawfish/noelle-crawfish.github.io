@@ -1,0 +1,6 @@
+#+title: Chip War
+#+subtitle: “Last year, the chip industry produced more transistors than the combined quantity of all goods produced by all other companies, in all other industries, in all human history.” -- Chris Miller, Chip War
+
+Chip War is one of my favorite non-fiction books of all time, and one I find myself constantly recommending both to people within my field (ECE) and outside.
+The book covers the history of the modern world through the lens of the semiconductor industry, which should appeal to both those interested in politics and those interested in the technology. Despite being written for those with little-to-no prior knowledge of the subject, I was pleasantly surprised by the amount of technical details included. Throughout the book the author explains the entirety of the semiconductor manufacturing process, and does a great job convincing readers of the magnitude of challenges that scientists have overcome to make modern technologies work.
+As chips are only going to become more integral to the global economy, I think this is a book everyone needs to read.
