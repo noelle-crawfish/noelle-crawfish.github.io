@@ -1,15 +1,22 @@
 #+title: Progress Narrative
 #+subtitle: /"God isn't compatible with machinery and scientific medicine and universal happiness. You must make your choice. Our civilization has chosen machinery and medicine and happiness.”/ -- Aldus Huxley, Brave New World
 
-I'm a huge fan of science fiction.
-As scientific and technological progress are seeing a cambrian explosion of new ideas, the genre offers such unique perspectives on the political and social structures that will emerge in the changing world landscape. To me, reading and thinking about the potential interactions between humans and technology is almost as interesting as the futuristic technologies themselves.
+I'm a huge fan of speculative science fiction. 
+We are living in a cambrian explosion of scientific progress, which means technologies that seemed impossible yesterday may be real tommorow. 
+As such, the genre offers a unique way for people to share nuanced ideas on the political and social structures that can, or should, emerge alongside the changing landscape.
+To me, reading and thinking about the potential interactions between humans and technology is /almost/ as interesting as the development of the technologies themselves.
+While the transhumanist societies of books are still only vague ideas, the human body is far from unaffected by today's technologies.
 
-One common theme amongst novels seems to be showing progress as both a blessing and a curse, with authors warning of the challenges a technologically advances future will bring.
-We are programmed to fear change, and so it is unsuprising thta this is reflected in fiction.
-In fact, so much technology that we still regard as "science fictional" actually exists today (Huel can remove the need to cook, Zest is a pill to wake you up without grogginess), and yet these amazing tools are not seeing the utilization they deserve.
+Recently I've become fascinated with bio-hacking, which is the practice of treating your body and health as essentially a science expierement, with the goal of improving your life and well being. 
+I like the idea of data-driven self improvement, and with the number of at-home measurement tools available these days, it should be easier than ever.
+Usually only commercially availably products, I'm trying to collect as much data as possible on my life, and measure how certain changes affect my day-to-day.
 
-# Recently, I've become fascinated with biohackers, people using th
-I've recently been on a bit of a self-improvement kick, and, inspired by biohackers, I've decided to try some at-home experimentation.
-Using only commercially available products, I'm trying to collect as much data as possible on my life, and how certain changes affect me day-to-day.
+All data I collect can be found *here* and will be updated regularly.
+# One common theme amongst novels seems to be showing progress as both a blessing and a curse, with authors warning of the challenges a technologically advances future will bring.
+# We are programmed to fear change, and so it is unsuprising thta this is reflected in fiction.
+# In fact, so much technology that we still regard as "science fictional" actually exists today (Huel can remove the need to cook, Zest is a pill to wake you up without grogginess), and yet these amazing tools are not seeing the utilization they deserve.
+# # Recently, I've become fascinated with biohackers, people using th
+# I've recently been on a bit of a self-improvement kick, and, inspired by biohackers, I've decided to try some at-home experimentation.
+# Using only commercially available products, I'm trying to collect as much data as possible on my life, and how certain changes affect me day-to-day.
+# All data I collect can be found *here (TODO)* and will be updated at least weekly.
 
-All data I collect can be found *here (TODO)* and will be updated at least weekly.
