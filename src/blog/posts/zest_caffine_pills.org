@@ -3,25 +3,32 @@
 
 Link: [[https://takezest.com/product/wake-up-pill][https://takezest.com]]
 
-* The Product
-You can read their website,but I'll summarize
-
-One issue I face in day to day life -> getting out of bed is hard. I schedule morning gym sesh / try to be in the office early, but it's easy for me to choose sleep instead, or, just have trouble getting up. Want to "feel" well rested even when not.
+* What is Zest 
+Zest is a slow-release, delayed-release caffine pill designed to make getting out of bed in the morning easy. You take a pill 8 hours before your desired wake-up time and then sleep normally. Zest will time the release of caffine into your bloodstream such that you wake up at your desired time feeling refreshed. It then continues releasing caffine slowly throughout the morning, leading to a more stable "awake" feeling than a cup of coffee could offer. 
 
 * My Experience
+I'm definitely someone who wishes sleep were optional, and tries my best to act as if it is. When I need more time in my schedule (as I often do), sleep is the first thing to go. As a result, I find that getting out of bed in the morning can be quite hard. When ads for Zest started popping up on my Instagram feed, I was immediately intrigued but also quite skeptical. If such a pill existed, wouldn't I have heard more about it?
+Eventually I decided to order a month's supply and try for myself. While I wouldn't consider Zest pills a fine-tuned product /yet/, they've been a useful tool for days when I know sleep deprivation is inevitable.
+
 ** First Attempt
-The first time I took Zest, despite their warnings, I ate a large meal (chipotle) an hour beforehand. I took the pill at 10pm and work up at ~4am with my heart pounding. 
-- was pretty suprised the caffine was so "potent" -> only 80mg
+According to the handbook, the Zest pills should be taken on an empty stomach to avoid premature caffine relase.
+The first time I took Zest I ignored these warnings and ate a large meal (Chipotle) an hour beforehand. 
+I took the pill at 10pm and found myself wide-awake at 4am with my heart pounding. The potency of the caffine suprised me -- despite being only 80mg and slow-release the pills definitely pack a punch.
+By the time I got to the gym (6:15 am) I felt great, and even towards the end of the day I found the lack of sleep due to my unnecessarily early wake-up to be unnoticable.
 ** Second Attempt 
-Didn't eat beforehand, took just after 10pm, woke up just before 6am.
-Not convinced it's exactly 8 hours, a bit less for me, but I'm fine with that, as I don't really get 8 hours of sleep consistently (nor should you be taking the pill imo if you will)
-** The Pill as a Jetlag Cure
-Went to CA and got sick, was struggling to get back on Central Time (waking up @ 9 and still tired).
-Took the pill -> woke up at 6am and made it to the gym
-** Side Effects
-Being excited to use the pill but seeing that it was only 80mg caffine drove me to cut coffee / energy drink consumption after my purchase. I wanted the full effects and was concerned caffine tolerance could mess with it. (positive side effect for my wallet lol)
+For my second attempt, I learned my lesson and was careful not to eat after an early dinner (~6pm). 
+I took the pill just after 10pm and woke up just before 6am. I've found that in general, I tend to wake up ~7 hours after taking the pill, but it's not much of a problem given that I don't typically get 8 hours of sleep on weekdays.
+Again, I felt more awake than normal throughout my day, even towards the evening when the caffine should have worn off.
+** My General Usage
+While advertised as something you can take every day for more consistent sleep, I don't think I would ever use the pills regularly.
+Instead, I've been using these as a way to force myself back on track when I sleep in for multiple consecutive days/my sleep schedule gets too off track. Once I'm confident in re-establishing a good pattern, I go back to relying on an alarm and willpower.
+** Special Use Cases 
+*** Zest as a Jetlag Cure
+I recently travelled to CA (2 hours behind) and got sick on the way back. When returning to work, I was struggling to get back on Central Time, and extra lethargic due to the illness. Even waking up as late as 9am I was still tired! After giving myself a few days to recover I took a pill, woke up at 6am, and made it to the gym before work for the first time since returning home. Without the pill, I think it would've taken me much longer to get back on track.
+*** Zest and All-Nighters
+Since receiving my pills, I've had to pull a few all-nighters. I'm someone who is naturally pretty ok missing a single night of sleep, but I dislike driving the next day due to the increased danger associated with driving on low sleep. I've used zest a few times when driving long distances without sleep, and the results seem pretty good. I feel more alert, and don't notice the tell-tale boughts of drowsy ignorance I've sometimes felt driving late at night. I'm not sure if this actually /is/ safer than normal, but it definitely /feels/ much safer. Maybe something interesting to study (@zestlabs)?
 
 * Discussion
-Some ppl say "not fixing symptoms, just hiding them". Obviously, yes this is the case. I'd love if there was a pill you could take to not need sleep at all (or gen-mod... beggars in spain ??), but we're not there yet. The thing is, I have enough I want to do while awake that I was never going to get more sleep. The choice is between being tired and feeling tired or being tired and feeling great.
+When talking about Zest to friends, I've heard a lot of people complain that the pill isn't actually fixing symptoms, but instead just hiding them. This is true, but I also don't think it's a bad thing. As much as I'd love a pill that entirely removed your need to sleep (or a gen-mod technique...), that's a bit out of scope for today's scientists. I have enough things I prioritize over sleep such that even without Zest, I probably would not be sleeping less, and therefore, would be just as tired. The choice users make when they take the pill is whether or not they'd like to /feel/ this tiredness. Personally, I'd rather feel awake.
 
-Not magic. It is possible to go back to sleep after waking up, find that it is less effictive when sleeping next to my boyfriend (bc I'll want to cuddle before getting out of bed and fall back asleep).
+Another thing to not is that Zest is not magic. It's entirely possible to go back to sleep after waking up, especially if you have external motivators (like cuddling with a significant other). I've never fallen back asleep without actively trying, but the fact that it's possible probably implies I will at some point, if tired enough. 

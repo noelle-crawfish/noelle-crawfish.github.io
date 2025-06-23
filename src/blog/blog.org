@@ -1,11 +1,11 @@
 #+title: Blog
-#+subtitle: /"insert mildly interesting quote here"/ -- ur mom
+# #+subtitle: /"For a moment, nothing happened. Then, after a second or so, nothing continued to happen."/ -- D. Adams, The Hitchiker's Guide to the Galaxy
+#+subtitle: /"The ships hung in the sky much in the same way that bricks don't."/ -- D. Adams, The Hitchiker's Guide to the Galaxy
 
-Hi, my name's *Noelle*. I'm a PhD student at the University of Illinois Urbana-Champaign studying *computer architecture* with a focus on building the next generation of *AI infrastructure*.
-
-*Projects*
 - [[file:posts/oblivious_data_structues.org][An Oblivious Data Structure Library]]
-- [[file:posts/based_acc.org][BasedAcc: A BFV Homomorphic Encryption Accelerator]]
-*Product Reviews*
 - [[file:posts/zest_caffine_pills.org][Zest Labs Wake-Up Pill​]]
 - [[file:posts/huel.org][Huel]] 
+
+# - [[file:posts/vegan.org][Arguments for Veganism]]
+# - [[file:posts/based_acc.org][BasedAcc: A BFV Homomorphic Encryption Accelerator]]
+# - GCDs Don't Always Exist (in all Rings)
