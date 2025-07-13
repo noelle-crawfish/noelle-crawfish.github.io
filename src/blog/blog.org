@@ -3,9 +3,10 @@
 #+subtitle: /"The ships hung in the sky much in the same way that bricks don't."/ -- D. Adams, The Hitchiker's Guide to the Galaxy
 
 - [[file:posts/oblivious_data_structues.org][An Oblivious Data Structure Library]]
-- [[file:posts/zest_caffine_pills.org][Zest Labs Wake-Up Pill​]]
-- [[file:posts/huel.org][Huel]] 
+- [[file:posts/zest_caffine_pills.org][Product Review: Zest Labs Wake-Up Pill​]]
+- [[file:posts/huel.org][Product Review: Huel]] 
 
 # - [[file:posts/vegan.org][Arguments for Veganism]]
 # - [[file:posts/based_acc.org][BasedAcc: A BFV Homomorphic Encryption Accelerator]]
 # - GCDs Don't Always Exist (in all Rings)
+# - Pseudoprimes

@@ -1,5 +1,7 @@
 #+title: A C++ Library for Oblivious Data Structures
 
+*GitHub Repo:* https://github.com/noelle-crawfish/oblivious-data-structures
+
 * Motivation 
 Increase in cloud computing, but we don't trust the cloud. 
 # there are tangible benifits to them snooping on data - model weights, etc.

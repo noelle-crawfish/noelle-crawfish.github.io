@@ -1,9 +1,9 @@
 #+title: Zest Labs Wake-Up Pill
-#+subtitle: "beggars in spain quote" -- Nancy Kress, Beggars in Spain
+#+subtitle: "But never before in the United States had the objects of envy and the objects of biological prejudice been the same group.” -- Nancy Kress, Beggars in Spain
 
 Link: [[https://takezest.com/product/wake-up-pill][https://takezest.com]]
 
-* What is Zest 
+* What is Zest?
 Zest is a slow-release, delayed-release caffine pill designed to make getting out of bed in the morning easy. You take a pill 8 hours before your desired wake-up time and then sleep normally. Zest will time the release of caffine into your bloodstream such that you wake up at your desired time feeling refreshed. It then continues releasing caffine slowly throughout the morning, leading to a more stable "awake" feeling than a cup of coffee could offer. 
 
 * My Experience
@@ -31,4 +31,4 @@ Since receiving my pills, I've had to pull a few all-nighters. I'm someone who i
 * Discussion
 When talking about Zest to friends, I've heard a lot of people complain that the pill isn't actually fixing symptoms, but instead just hiding them. This is true, but I also don't think it's a bad thing. As much as I'd love a pill that entirely removed your need to sleep (or a gen-mod technique...), that's a bit out of scope for today's scientists. I have enough things I prioritize over sleep such that even without Zest, I probably would not be sleeping less, and therefore, would be just as tired. The choice users make when they take the pill is whether or not they'd like to /feel/ this tiredness. Personally, I'd rather feel awake.
 
-Another thing to not is that Zest is not magic. It's entirely possible to go back to sleep after waking up, especially if you have external motivators (like cuddling with a significant other). I've never fallen back asleep without actively trying, but the fact that it's possible probably implies I will at some point, if tired enough. 
+Another thing to not is that Zest is not magic. It's entirely possible to go back to sleep after waking up. I've never fallen back asleep without actively trying, but the fact that it's possible probably implies I will at some point, if tired enough. 
