@@ -33,6 +33,7 @@
 (package-install 'htmlize)
 
 (require `ox-publish)
+(require `ox-html)
 
 (setq org-publish-project-alist
       (list
@@ -44,13 +45,15 @@
              :with-toc nil
              :section-numbers nil
              :timestamp nil
+	     :with-special-strings nil
+	     :htmlized-source t
+	     :with-html t
              )))
-
 
 (setq org-html-validation-link nil)
 
 ;; generates the site output
 (org-publish-all t)
 
-;; (provide 'build-site)
+(provide 'build-site)
 ;;; build-site.el ends here

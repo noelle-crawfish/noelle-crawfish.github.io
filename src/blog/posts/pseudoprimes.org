@@ -1,0 +1,25 @@
+#+title: Pseudoprimes
+#+subtitle: The Imperfections Primality Testing
+
+* Background
+A number $$p$$ is prime iff $$\forall x$$ such that $$x \mid p$$, either $$x = 1$$ or $$x = p$$.
+
+Given a number, how would you check if it's prime? The simplist answer is to factor it. For all known prime numbers less than /n/, ...
+But what if /n/ is big? Take XXXX for example. To store all prime numbers less than XXXX would take XXX GB of space, ....
+You could generate numbers on the fly, a modern computer could likely spare the space during computation, if it's not being used for much else, but that would take quite a while. 
+
+The thing is, modern cryptography relies on prime numbers, and in many cases, these numbers cannot be constantly re-used. That means, we need to be able to generate, or at least check that numbers are prime on the fly.
+# why check -> let's say everyone has a prime picked for themselves in advance, what if someone lies and gives you a  composite number? -> lots of attacks when numbers have many small factors, etc.
+
+So researchers have come up with probabalistic primality tests which pass /much/ more often on prime numbers than composite. When /much/ is big enough, this means we can be relatively sure numbers are prime
+
+
+* Primality Testing
+** Fermat Test
+*** Fermat's Little Therom
+** Miller-Rabin Test
+** Lucas Test
+** Baille-PSW
+
+* Pseudoprime Construction
+The following is taken from this paper (link Primes and Prejudice)

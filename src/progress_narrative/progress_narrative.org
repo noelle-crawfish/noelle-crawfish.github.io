@@ -11,7 +11,7 @@ Recently I've become fascinated with bio-hacking, which is the practice of treat
 I like the idea of data-driven self improvement, and with the number of at-home measurement tools available these days, it should be easier than ever.
 Usually only commercially availably products, I'm trying to collect as much data as possible on my life, and measure how certain changes affect my day-to-day.
 
-All data I collect can be found *here* and will be updated regularly.
+All data I collect can be found [[file:data.org][*here*]] and will be updated regularly.
 # One common theme amongst novels seems to be showing progress as both a blessing and a curse, with authors warning of the challenges a technologically advances future will bring.
 # We are programmed to fear change, and so it is unsuprising thta this is reflected in fiction.
 # In fact, so much technology that we still regard as "science fictional" actually exists today (Huel can remove the need to cook, Zest is a pill to wake you up without grogginess), and yet these amazing tools are not seeing the utilization they deserve.
@@ -20,3 +20,5 @@ All data I collect can be found *here* and will be updated regularly.
 # Using only commercially available products, I'm trying to collect as much data as possible on my life, and how certain changes affect me day-to-day.
 # All data I collect can be found *here (TODO)* and will be updated at least weekly.
 
+
+# I really want to just to everything in org, is there a way to insert dynamic graphs :pls:

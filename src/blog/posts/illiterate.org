@@ -1,0 +1,24 @@
+#+title: Am I the Illiterate Youth?
+#+subtitle: Why I'm trying to read more fiction.
+
+Like many people I know, I used to read /a lot/ in elementary school, but lost interst later on for some assortment of rational.
+For the past few years I've been rediscovering my love for books -- mostly non-fiction. It started with "history of technology style books" as I like learning the stories behind great technologies and I find the characters (mostly famous engineers) easy to relate to. 
+From there I branched out and started reading other non-ficiton: non-tech. histories, books on economics, and even a bit of philosophy. 
+
+Once in a while I'll pick up a sci-fi or fantasy book, especially when the Hugos/other awards come out, but for the most part, I find fiction much harder to finish, and often find myself needing external motivation (i.e., reading buddies).
+
+However, a few days ago I had a conversation with a friend which gave me pause -- 
+- told her non-fiction was an easy way to unwind, usually layed out for you and you're clearly "getting someting"
+With some noteable exceptions (i.e., [[file:~/fun/website/src/media/reviews/books/godel_escher_bach.org][G.E.B.]]), non-fiction is much easier to read than fiction.
+Good non-fiction ... is academic writing or journalism.
+In contrast, good fiction is full of subtlety. Authors will purposefully build layered stories that can be analyzed over the course of many reads without graphing all of what is being said. Getting the most out of fiction requires work, and in some cases, getting anything at all can require work.
+
+A few months ago my book club decided to read Erewhon. It was my suggestion, as I had an upcoming trip planned to L.A. and thought that if I was going to visit the store, I should have some understanding of its namesake.
+It's also a book that /should/ be relevant to the current technological landscape and has been referrenced by many well known historical figures I respect (Turing).
+- We all read ~1 chapter before pivoting to a different book. It's written in 1872, hard to read. 
+- At the end of the day, it is english, and it's not that long. 
+
+In fear of admitting to illiteracy, I've gone back and finished Erewhon (you can read my review [[file:~/fun/website/src/media/reviews/books/erewhon.org][here]]).
+While I still wasn't the biggest fan, it was a decent read, and I'm glad to have read it. 
+I plan to make more of an effort to incorporate /good/ fiction into my book selections, since after all, there's only so much room for good ideas in reality. Sometimes, to understand the world we need to sit down and think about...
+

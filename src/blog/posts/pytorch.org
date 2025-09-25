@@ -1,0 +1,47 @@
+#+title: PyTorch Compilation
+
+- something something when running model first time it's v slow bc of this JIT BS
+- torch being JIT + having shit tracing causes probelms (ex. Alpa on JAX vs Alpa on torch)
+  - But they're fixing this !!! (is MoE a catalyst or other issues)
+    
+* torch.compiler
+- main function / feature is torch.compile()
+- TorchDynamo (torch._dynamo) is an internal API to captur graphs
+- TorchInductor is default deep learning compiler, leverages OpenAI Triton
+- AOT autograd captures user level + autogrd ahead-of-time
+  
+* TorchDynamo
+- JIT
+- Hooks into fram evaluation API in CPython
+- Rewrites python bytecode into an FX graph
+  - idea is to mix python execution with compiled backends
+- single line to experiment w/ backends: =torch._dynamo.optimize()= -> wrapped by torch.compile()
+  - TorchInductor is one such backend -> compilation using triton
+    
+** Guards
+- Basically assertions about the graphs
+- If any fail, recapture + recompile graph
+
+* JIT + Tracing
+=torch.jit.trace= uses a placeholder value to trace a function -> no support for conditional dataflow, can't handle aliasing???
+- how does aliasing work in JAX? does it work now in fx + export?
+  - warning says only supports not data dependent and not untracked dependencies (global variables that could change)
+  - if statements, loops, can't be dynamic (how would we write a dynamic loop in fx?)
+** Shortcomings
+
+* Torch FX IR
+** =torch.export()=
+- handles graph breaks better
+  - use =torch.cond()= =torch.while_loop()=
+  - a bit awkward to program w/ at first but fine once you get used to it
+** =torch._higher_order_ops=
+- associative scan, auto functionalize, cond, effects, flex_attention, map, out_dtype, strict_mode, torchbind, triton_kernel_wrap, utils, while_loop, wrap
+- stack???
+
+* TorchInductor
+- default compiler backend for =torch.compile= in PyTorch 2.x+
+- specialized AOTInductor exists
+
+  
+- how dows actual interfacing bw torch and triton happen...
+- look at specific MoE kernel implementations? (DeepSeek, ..)

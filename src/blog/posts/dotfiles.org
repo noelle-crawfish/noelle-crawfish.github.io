@@ -1,0 +1,17 @@
+
+#+title: Dotfiles
+#+subtitle: How I configure my system to do exactly what I want.
+
+* NixOS
+** Home-Manager
+- pretty nice
+** Direnv
+- really nice, 
+** Flakes
+- use to build stuff, even proejcts other ppl will use
+
+* Emacs
+- tramp is awesome
+- even python notebooks? 
+  
+* My Desk (picture)

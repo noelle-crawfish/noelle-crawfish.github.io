@@ -1,12 +1,18 @@
 #+title: Blog
 # #+subtitle: /"For a moment, nothing happened. Then, after a second or so, nothing continued to happen."/ -- D. Adams, The Hitchiker's Guide to the Galaxy
 #+subtitle: /"The ships hung in the sky much in the same way that bricks don't."/ -- D. Adams, The Hitchiker's Guide to the Galaxy
-
-- [[file:posts/oblivious_data_structues.org][An Oblivious Data Structure Library]]
+ 
+# - [[file:posts/curiosity.org][Curiosity]]
+# - [[file:posts/pseudoprimes.org][Pseudoprimes]]
+# - [[file:posts/car_living.org][Car Camping in Urbana-Champaign]]
+# - [[file:posts/pytorch.org][Some Thoughts on PyTorch Compilation]] 
+# - [[file:posts/illiterate.org][Am I the Illiterate Youth?]]
 - [[file:posts/zest_caffine_pills.org][Product Review: Zest Labs Wake-Up Pill​]]
 - [[file:posts/huel.org][Product Review: Huel]] 
+- [[file:posts/oblivious_data_structues.org][An Oblivious Data Structure Library]]
 
+# - No Rest Days 
 # - [[file:posts/vegan.org][Arguments for Veganism]]
 # - [[file:posts/based_acc.org][BasedAcc: A BFV Homomorphic Encryption Accelerator]]
-# - GCDs Don't Always Exist (in all Rings)
-# - Pseudoprimes
+# - GCDs Don't Always Exist (in all Rings) - maybe side note on non-abelian groups - tldr math is weird when it doesn't map to the integers
+# - Quest for fashion - worried writing this would come off badly / too looxmaxxer-ey
