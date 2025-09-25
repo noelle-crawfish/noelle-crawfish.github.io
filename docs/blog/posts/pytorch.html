@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-09-25 Thu 18:52 -->
+<!-- 2025-09-25 Thu 18:55 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>PyTorch Compilation</title>
@@ -204,9 +204,9 @@
 <li>But they're fixing this !!! (is MoE a catalyst or other issues)</li>
 </ul></li>
 </ul>
-<div id="outline-container-org4c4b5d9" class="outline-2">
-<h2 id="org4c4b5d9">torch.compiler</h2>
-<div class="outline-text-2" id="text-org4c4b5d9">
+<div id="outline-container-org19f98da" class="outline-2">
+<h2 id="org19f98da">torch.compiler</h2>
+<div class="outline-text-2" id="text-org19f98da">
 <ul class="org-ul">
 <li>main function / feature is torch.compile()</li>
 <li>TorchDynamo (torch.<sub>dynamo</sub>) is an internal API to captur graphs</li>
@@ -215,9 +215,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org87dfe68" class="outline-2">
-<h2 id="org87dfe68">TorchDynamo</h2>
-<div class="outline-text-2" id="text-org87dfe68">
+<div id="outline-container-orgd9dc784" class="outline-2">
+<h2 id="orgd9dc784">TorchDynamo</h2>
+<div class="outline-text-2" id="text-orgd9dc784">
 <ul class="org-ul">
 <li>JIT</li>
 <li>Hooks into fram evaluation API in CPython</li>
@@ -231,9 +231,9 @@
 </ul></li>
 </ul>
 </div>
-<div id="outline-container-org56117d7" class="outline-3">
-<h3 id="org56117d7">Guards</h3>
-<div class="outline-text-3" id="text-org56117d7">
+<div id="outline-container-orgb54a501" class="outline-3">
+<h3 id="orgb54a501">Guards</h3>
+<div class="outline-text-3" id="text-orgb54a501">
 <ul class="org-ul">
 <li>Basically assertions about the graphs</li>
 <li>If any fail, recapture + recompile graph</li>
@@ -241,9 +241,9 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org63407ff" class="outline-2">
-<h2 id="org63407ff">JIT + Tracing</h2>
-<div class="outline-text-2" id="text-org63407ff">
+<div id="outline-container-orgb3fc413" class="outline-2">
+<h2 id="orgb3fc413">JIT + Tracing</h2>
+<div class="outline-text-2" id="text-orgb3fc413">
 <p>
 <code>torch.jit.trace</code> uses a placeholder value to trace a function -&gt; no support for conditional dataflow, can't handle aliasing???
 </p>
@@ -255,17 +255,17 @@
 </ul></li>
 </ul>
 </div>
-<div id="outline-container-orgda732a1" class="outline-3">
-<h3 id="orgda732a1">Shortcomings</h3>
+<div id="outline-container-orgb455714" class="outline-3">
+<h3 id="orgb455714">Shortcomings</h3>
 </div>
 </div>
-<div id="outline-container-orgfb4add0" class="outline-2">
-<h2 id="orgfb4add0">Torch FX IR</h2>
-<div class="outline-text-2" id="text-orgfb4add0">
+<div id="outline-container-orga82e8a2" class="outline-2">
+<h2 id="orga82e8a2">Torch FX IR</h2>
+<div class="outline-text-2" id="text-orga82e8a2">
 </div>
-<div id="outline-container-org8118123" class="outline-3">
-<h3 id="org8118123"><code>torch.export()</code></h3>
-<div class="outline-text-3" id="text-org8118123">
+<div id="outline-container-orga0d90c9" class="outline-3">
+<h3 id="orga0d90c9"><code>torch.export()</code></h3>
+<div class="outline-text-3" id="text-orga0d90c9">
 <ul class="org-ul">
 <li>handles graph breaks better
 <ul class="org-ul">
@@ -275,9 +275,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org5f5c8ec" class="outline-3">
-<h3 id="org5f5c8ec"><code>torch._higher_order_ops</code></h3>
-<div class="outline-text-3" id="text-org5f5c8ec">
+<div id="outline-container-orge1d5e1f" class="outline-3">
+<h3 id="orge1d5e1f"><code>torch._higher_order_ops</code></h3>
+<div class="outline-text-3" id="text-orge1d5e1f">
 <ul class="org-ul">
 <li>associative scan, auto functionalize, cond, effects, flex<sub>attention</sub>, map, out<sub>dtype</sub>, strict<sub>mode</sub>, torchbind, triton<sub>kernel</sub><sub>wrap</sub>, utils, while<sub>loop</sub>, wrap</li>
 <li>stack???</li>
@@ -285,9 +285,9 @@
 </div>
 </div>
 </div>
-<div id="outline-container-orgc866987" class="outline-2">
-<h2 id="orgc866987">TorchInductor</h2>
-<div class="outline-text-2" id="text-orgc866987">
+<div id="outline-container-orge0a4854" class="outline-2">
+<h2 id="orge0a4854">TorchInductor</h2>
+<div class="outline-text-2" id="text-orge0a4854">
 <ul class="org-ul">
 <li>default compiler backend for <code>torch.compile</code> in PyTorch 2.x+</li>
 <li>specialized AOTInductor exists</li>
@@ -303,7 +303,7 @@
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Noelle Crawford</p>
-<p class="date">Created: 2025-09-25 Thu 18:52</p>
+<p class="date">Created: 2025-09-25 Thu 18:55</p>
 </div>
 </body>
 </html>
