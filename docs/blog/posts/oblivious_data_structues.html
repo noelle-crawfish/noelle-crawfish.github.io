@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-09-25 Thu 18:55 -->
+<!-- 2025-09-25 Thu 19:07 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>A C++ Library for Oblivious Data Structures</title>
@@ -232,9 +232,9 @@
 <p>
 <b>GitHub Repo:</b> <a href="https://github.com/noelle-crawfish/oblivious-data-structures">https://github.com/noelle-crawfish/oblivious-data-structures</a>
 </p>
-<div id="outline-container-orgec4db37" class="outline-2">
-<h2 id="orgec4db37">Motivation</h2>
-<div class="outline-text-2" id="text-orgec4db37">
+<div id="outline-container-orgab7750d" class="outline-2">
+<h2 id="orgab7750d">Motivation</h2>
+<div class="outline-text-2" id="text-orgab7750d">
 <p>
 Increase in cloud computing, but we don't trust the cloud. 
 </p>
@@ -260,13 +260,13 @@ This overhead can be removed in specific scenarios, but real-world implementatio
 </p>
 </div>
 </div>
-<div id="outline-container-orga2b4017" class="outline-2">
-<h2 id="orga2b4017">Background</h2>
-<div class="outline-text-2" id="text-orga2b4017">
+<div id="outline-container-org79a0476" class="outline-2">
+<h2 id="org79a0476">Background</h2>
+<div class="outline-text-2" id="text-org79a0476">
 </div>
-<div id="outline-container-orgecad221" class="outline-3">
-<h3 id="orgecad221">Secure Program Execution</h3>
-<div class="outline-text-3" id="text-orgecad221">
+<div id="outline-container-org0da1a6e" class="outline-3">
+<h3 id="org0da1a6e">Secure Program Execution</h3>
+<div class="outline-text-3" id="text-org0da1a6e">
 <p>
 When considering how to define secure program execution, there are many facets to consider: compute, memory, network devices, etc. all have the ability to leak different, potentially sensitive information. Since it is difficult to consider all facets of secure execution at once, researchers segment security definitions to deal with the specific ways in which data could be leaked as individual security guarantees.
 </p>
@@ -277,9 +277,9 @@ This is important, as through memory access patterns, an adversary may be able t
 </p>
 </div>
 </div>
-<div id="outline-container-orgbbe021b" class="outline-3">
-<h3 id="orgbbe021b">ORAM</h3>
-<div class="outline-text-3" id="text-orgbbe021b">
+<div id="outline-container-org5f02426" class="outline-3">
+<h3 id="org5f02426">ORAM</h3>
+<div class="outline-text-3" id="text-org5f02426">
 <p>
 ORAM is a system and/or compiler level technique to translate programs into a memory-trace oblivious form. 
 Almost all ORAM designs share the same core ideas for hiding data. When blocks are accessed, they are shuffled an remapped, so repeated accesses to the same data point will appear to be targeting a sequence of different, random memory locations. Data is also "over-fetched", meaning not all retrieved blocks contain useful data. This prevents an adversary from identifying which of several blocks is of use to the client. 
@@ -308,9 +308,9 @@ Unfortunately, current research has been unable to alleviate this problem in the
 </p>
 </div>
 </div>
-<div id="outline-container-org3729873" class="outline-3">
-<h3 id="org3729873">Oblivious Data Structures</h3>
-<div class="outline-text-3" id="text-org3729873">
+<div id="outline-container-orgab0923d" class="outline-3">
+<h3 id="orgab0923d">Oblivious Data Structures</h3>
+<div class="outline-text-3" id="text-orgab0923d">
 <p>
 A small number of prior works specifically target oblivious data structures, which are data structures built on top of secure technologies such as MPC or ORAM.
 Our work is based on the pointer-based ORAM oblivious data structures described by \cite{wang2014oblivious} due to the simplicity and extensibility of its design.
@@ -320,25 +320,25 @@ The paper also proposes a locality based strategy for implementing efficient obl
 </div>
 </div>
 </div>
-<div id="outline-container-org7caadae" class="outline-2">
-<h2 id="org7caadae">How it Works</h2>
-<div class="outline-text-2" id="text-org7caadae">
+<div id="outline-container-org26600c8" class="outline-2">
+<h2 id="org26600c8">How it Works</h2>
+<div class="outline-text-2" id="text-org26600c8">
 </div>
-<div id="outline-container-org69d1745" class="outline-3">
-<h3 id="org69d1745">Client Server Model</h3>
-<div class="outline-text-3" id="text-org69d1745">
+<div id="outline-container-org6343c53" class="outline-3">
+<h3 id="org6343c53">Client Server Model</h3>
+<div class="outline-text-3" id="text-org6343c53">
 <p>
 Our design is based on a client server ORAM model, where communication occurs using serialized command structures over a TCP stream. The client initiates path reads or path write-backs, and then sends or receives a fixed number of encrypted ORAM blocks based on the path ORAM parameters. For example, a tree with \(L = 4\) levels and \(Z = 8\) blocks per node bucket would read/write \(4 \cdot 8 = 32\) blocks. The buckets are initialized to contain encrypted "empty" blocks, which are replaced during execution with real blocks as the data structure is populated.
 </p>
 </div>
 </div>
-<div id="outline-container-orgfd9f663" class="outline-3">
-<h3 id="orgfd9f663">Data Structures</h3>
-<div class="outline-text-3" id="text-orgfd9f663">
+<div id="outline-container-orga2bc9b1" class="outline-3">
+<h3 id="orga2bc9b1">Data Structures</h3>
+<div class="outline-text-3" id="text-orga2bc9b1">
 </div>
-<div id="outline-container-org7c8eadb" class="outline-4">
-<h4 id="org7c8eadb">Oblivious Stack</h4>
-<div class="outline-text-4" id="text-org7c8eadb">
+<div id="outline-container-orgac700d7" class="outline-4">
+<h4 id="orgac700d7">Oblivious Stack</h4>
+<div class="outline-text-4" id="text-orgac700d7">
 <p>
 Figure \ref{fig:stack} shows an oblivious stack data structure. Like in traditional path ORAM, each block has an associated address mapped to a certain leaf index. Unlike traditional path ORAM, the client ORAM only has access to a single one of these mappings: it stores the top pointer and the associated leaf index. 
 </p>
@@ -352,9 +352,9 @@ When popping from the stack, the client side metadata is used to lookup the top 
 </p>
 </div>
 </div>
-<div id="outline-container-org55b649f" class="outline-4">
-<h4 id="org55b649f">Oblivious Queue</h4>
-<div class="outline-text-4" id="text-org55b649f">
+<div id="outline-container-org7148ceb" class="outline-4">
+<h4 id="org7148ceb">Oblivious Queue</h4>
+<div class="outline-text-4" id="text-org7148ceb">
 <p>
 Figure \ref{fig:queue} shows an oblivious queue data structure. The queue client stores two ORAM pointers: one to the queue head and the other to the queue tail. These can be used to push and pop values to/from the queue similarly to the stack client. However, the queue requires a small modification to the push methodology.
 </p>
@@ -364,9 +364,9 @@ When removing blocks from the queue, we would then like to point the head to the
 </p>
 </div>
 </div>
-<div id="outline-container-orgdab092d" class="outline-4">
-<h4 id="orgdab092d">Oblivious AVL Tree (Map/Set)</h4>
-<div class="outline-text-4" id="text-orgdab092d">
+<div id="outline-container-orgec6b26a" class="outline-4">
+<h4 id="orgec6b26a">Oblivious AVL Tree (Map/Set)</h4>
+<div class="outline-text-4" id="text-orgec6b26a">
 <p>
 Figure \ref{fig:avl} shows an oblivious AVL tree, which is the basis of our oblivious map and oblivious set data structures. This follows from the C++ implementation of \code{std::map} and \code{std::set} which use the AVL tree for guaranteed fast look-ups.
 </p>
@@ -383,9 +383,9 @@ We introduce some optimizations during our implementation phase which help reduc
 </div>
 </div>
 </div>
-<div id="outline-container-orgee95faa" class="outline-2">
-<h2 id="orgee95faa">Implementation</h2>
-<div class="outline-text-2" id="text-orgee95faa">
+<div id="outline-container-org3aa4878" class="outline-2">
+<h2 id="org3aa4878">Implementation</h2>
+<div class="outline-text-2" id="text-org3aa4878">
 <p>
 We implement our library in \(\approx1500\) lines of C++.
 </p>
@@ -416,9 +416,9 @@ Each of the oblivious data structures described in this paper are implemented as
 The encryption and decryption of block data uses an AES implementation from the OpenSSL\cite{openssl} cryptography library. We operate on the entire ORAM block structure (including metadata), and send the fully encrypted blob to the server.
 </p>
 </div>
-<div id="outline-container-org5cefe05" class="outline-3">
-<h3 id="org5cefe05">Optimizations</h3>
-<div class="outline-text-3" id="text-org5cefe05">
+<div id="outline-container-org864d499" class="outline-3">
+<h3 id="org864d499">Optimizations</h3>
+<div class="outline-text-3" id="text-org864d499">
 <p>
 We introduce two optimizations during our implementation phase. 
 The first is delayed writes. For stack/queue push operations, and AVL tree insertion, we know that the block at the address we'd like to write to does not yet exist on the server. Therefore, there is no need for us to communicate with the server. Instead, we create a new block locally and place it into the stash. It will then eventually be propagated to the server when an operation necessitating a write-back does occur.
@@ -430,9 +430,9 @@ The second optimization is the introduction of an \code{in\_use} flag for blocks
 </p>
 </div>
 </div>
-<div id="outline-container-org58dde01" class="outline-3">
-<h3 id="org58dde01">Security Analysis</h3>
-<div class="outline-text-3" id="text-org58dde01">
+<div id="outline-container-org96ef705" class="outline-3">
+<h3 id="org96ef705">Security Analysis</h3>
+<div class="outline-text-3" id="text-org96ef705">
 <p>
 Our implementation is based on prior works\cite{wang2014oblivious, stefanov2018path} which provide an in-depth security analysis of the pointer based method. We briefly discuss the security of our practical implementation decisions here.
 </p>
@@ -458,9 +458,9 @@ There is some information leakage in terms of read/write timing and the overall 
 </div>
 </div>
 </div>
-<div id="outline-container-org8aea31f" class="outline-2">
-<h2 id="org8aea31f">Limitations</h2>
-<div class="outline-text-2" id="text-org8aea31f">
+<div id="outline-container-orgebd637a" class="outline-2">
+<h2 id="orgebd637a">Limitations</h2>
+<div class="outline-text-2" id="text-orgebd637a">
 <p>
 Due to the short time-frame, our library has many limitations. First, the exposed APIs eliminate the possibility of random-access to data, essentially "locking" the information into the data structures. That is, data can only be accessed \textit{if} it is in a position referenceable under correct usage of the data structure. This prevents us from providing certain utility functions included in the C++ equivalent implementations, such as the ability to peek at data in the middle of a stack. To solve this, our ORAM client/server interface could be extended to provide recursive lookup functionality when necessary based on the Path ORAM\cite{stefanov2018path} design.
 </p>
@@ -481,7 +481,7 @@ Other than solving the limitations listed above, future work on this project cou
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Noelle Crawford</p>
-<p class="date">Created: 2025-09-25 Thu 18:55</p>
+<p class="date">Created: 2025-09-25 Thu 19:07</p>
 </div>
 </body>
 </html>

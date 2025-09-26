@@ -9,7 +9,7 @@
 # - [[file:posts/illiterate.org][Am I the Illiterate Youth?]]
 - [[file:posts/zest_caffine_pills.org][Product Review: Zest Labs Wake-Up Pill​]]
 - [[file:posts/huel.org][Product Review: Huel]] 
-- [[file:posts/oblivious_data_structues.org][An Oblivious Data Structure Library]]
+# - [[file:posts/oblivious_data_structues.org][An Oblivious Data Structure Library]]
 
 # - No Rest Days 
 # - [[file:posts/vegan.org][Arguments for Veganism]]
